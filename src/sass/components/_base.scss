@@ -1,0 +1,66 @@
+@import 'variables';
+
+.navBar {
+  background-color: $darkT !important;
+  * {
+    color: $sand !important;
+  }
+}
+
+.navTabs {
+  height: 65px;
+  background: $dark !important;
+  color: $sand !important;
+  &:hover {
+    color: white !important;
+  }
+  * {
+    margin-right: 12px !important;
+    padding-left: 8px !important;
+  }
+}
+
+.splashContainer {
+  background: url("/images/people-coffee-notes-tea.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  padding-top: 60px;
+}
+
+.splashDescription {
+  background: $darkT !important;
+  height: 150px;
+  width: 65%;
+  background: rgba(255,255,255,0.7);
+  margin: 0 auto;
+  margin-top: 250px;
+  div {
+    text-align: center;
+    color: $sand;
+    h1 {
+      padding-top: 45px;
+    }
+  }
+}
+
+@media only screen and (max-width : 600px) {
+
+  .splashDescription {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width : 420px) {
+
+  .splashDescription {
+    height: 250px;
+  }
+
+}
